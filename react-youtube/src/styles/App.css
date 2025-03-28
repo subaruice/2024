@@ -6,7 +6,8 @@
 
 #root {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .App {
@@ -20,6 +21,11 @@
     justify-content: space-between;
     align-items: center;
 }
+
+.post__btns {
+    display: flex;
+}
+
 select {
     padding: 5px 10px;
     margin: 5px 0;
@@ -42,4 +48,38 @@ select {
     opacity: 0;
     transform: translateY(-20px);
     transition: opacity 500ms, transform 500ms;
+}
+
+.page__wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+.page {
+    padding: 10px;
+    border: 1px solid teal;
+    cursor: pointer;
+}
+.page__current {
+    background-color: teal;
+    color: white;
+}
+
+.navbar {
+    width: 100vw;
+    display: flex;
+    padding: 0 15px;
+    background-color: teal;
+    color: white;
+    height: 50px;
+    align-items: center;
+}
+
+.navbar__item {
+    margin-left: auto;
+}
+.navbar__item a {
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
 }
